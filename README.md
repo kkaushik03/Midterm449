@@ -6,18 +6,13 @@ This project demonstrates how to build a robust RESTful API using Flask. The API
 
 ## Table of Contents
 
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Endpoints](#endpoints)
-- [Testing](#testing)
-- [Submission Requirements](#submission-requirements)
-- [Grading Rubric](#grading-rubric)
-- [Contributing](#contributing)
-- [License](#license)
+- [Features]
+- [Project Structure]
+- [Installation]
+- [Usage]
+- [Endpoints]
 
+- 
 ## Features
 
 - **Error Handling:** Custom error handlers for 400, 401, 404, 500, and other HTTP status codes ensure consistent error responses.
