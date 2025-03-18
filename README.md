@@ -47,15 +47,17 @@ This project demonstrates how to build a robust RESTful API using Flask. The API
   ```bash
   git clone https://github.com/yourusername/your-repo-name.git
   cd your-repo-name
-
+```
 2. **Create a virtual environment:**
+```bash
   python -m venv venv
   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
 
-
-3. **Install the dependencies:**
+4. **Install the dependencies:**
+```bash
   pip install -r requirements.txt
-
+```
 Configuration
 
 Before running the project, ensure you have the proper environment variables set up or adjust the settings in the app/config.py file. Important configurations include:
@@ -68,8 +70,9 @@ For local development, consider creating a .env file to manage sensitive data.
 # Usage
 
 To run the application, execute the following command:
+```bash
   python run.py
-
+```
 Once the server is running, access the API endpoints via your favorite API testing tool (e.g., Postman).
 
 # Endpoints
