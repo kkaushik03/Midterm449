@@ -28,7 +28,7 @@ This project demonstrates how to build a robust RESTful API using Flask. The API
 - **Modular Architecture:** Organized project structure using Flask Blueprints for improved maintainability and scalability.
 
 ## Project Structure
-/project
+```/project
 ├── app
 │    ├── init.py         # Application factory and extension initialization
 │    ├── config.py           # Configuration settings (database, JWT, file uploads, etc.)
@@ -43,7 +43,7 @@ This project demonstrates how to build a robust RESTful API using Flask. The API
 ├── requirements.txt        # List of project dependencies
 ├── README.md               # Project documentation (this file)
 └── run.py                  # Entry point to run the Flask application
-
+```
 
 ## Installation
 
