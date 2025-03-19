@@ -63,6 +63,7 @@ This project demonstrates how to build a robust RESTful API using Flask. The API
 Configuration
 
 Before running the project, ensure you have the proper environment variables set up or adjust the settings in the app/config.py file. Important configurations include:
+
 	•	Database URI: Update the connection string for your MySQL (or preferred) database.
 	•	JWT Secret Key: Replace the placeholder with a secure secret key.
 	•	File Uploads: The UPLOAD_FOLDER is configured to securely store uploaded files.
