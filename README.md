@@ -1,5 +1,5 @@
 # Building a RESTful API with Flask
-
+Video Link: https://youtu.be/Jv4JdMi9Q88
 ## Overview
 
 This project demonstrates how to build a robust RESTful API using Flask. The API includes comprehensive error handling, JWT-based authentication, secure file uploads, and well-organized public and admin (protected) routes. By completing this project, I gained hands-on experience in developing scalable web services with Flask.
