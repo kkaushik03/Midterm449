@@ -1,4 +1,9 @@
-# app/file_routes.py
+'''
+file_routes.py
+Implements file upload functionality with proper validation.
+Ensures uploaded files meet type and size restrictions before storage.
+Provides secure handling of file storage and access control mechanisms.
+# '''
 import os
 from flask import Blueprint, request, jsonify, current_app
 from flask_jwt_extended import jwt_required
@@ -6,7 +11,6 @@ from werkzeug.utils import secure_filename
 
 file_bp = Blueprint('files', __name__)
 
-# Allowed file extensions for uploads
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
 def allowed_file(filename):

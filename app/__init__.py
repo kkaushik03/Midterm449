@@ -1,4 +1,8 @@
-# app/__init__.py
+
+''' __init__.py
+This file initializes the Flask application by setting up the app instance.
+It also imports and registers the necessary Blueprints for modular routing.
+Additionally, it configures extensions such as SQLAlchemy and JWT for authentication.'''
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -12,14 +16,12 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
 
-    # Initialize extensions
     db.init_app(app)
     jwt.init_app(app)
 
     # Create uploads folder if it doesn't exist
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-    # Import and register blueprints
     from app.auth import auth_bp
     from app.items import items_bp
     from app.file_routes import file_bp
@@ -28,12 +30,10 @@ def create_app():
     app.register_blueprint(items_bp)
     app.register_blueprint(file_bp)
 
-    # A public route can be registered here or in its own blueprint
     @app.route('/')
     def home():
         return "Welcome to the API. Use /login for authentication and /public/items for public information."
 
-    # Create database tables (or use migrations for production)
     with app.app_context():
         db.create_all()
 

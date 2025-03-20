@@ -1,4 +1,10 @@
-# app/items.py
+
+'''
+items.py
+Defines routes for managing items in the application.
+Includes CRUD operations (Create, Read, Update, Delete) for item handling.
+Some endpoints are publicly accessible, while others require authentication.
+'''
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import jwt_required
 from app.models import Item

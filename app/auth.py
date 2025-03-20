@@ -1,4 +1,9 @@
-# app/auth.py
+'''
+auth.py
+This module handles user authentication using JWT (JSON Web Tokens). 
+It includes routes for user login, token generation, and protected access control.
+Users must provide valid credentials to receive a token, which is required for admin routes.
+'''
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from app.models import User

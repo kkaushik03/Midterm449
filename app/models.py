@@ -1,4 +1,9 @@
-# app/models.py
+'''
+models.py
+Defines database models using SQLAlchemy ORM.
+Contains User and Item models, along with their relationships and constraints.
+Facilitates easy interaction with the database for authentication and item management.
+'''
 from app import db
 from werkzeug.security import generate_password_hash, check_password_hash
 
