@@ -91,6 +91,8 @@ Once the server is running, access the API endpoints via your favorite API testi
 ## Items
 - **Public Items:** `GET /public/items`  
   Retrieves a list of items without requiring authentication.
+  <img width="899" alt="image" src="https://github.com/user-attachments/assets/0e76cc67-9321-4132-b773-792d0fdcfb49" />
+
 
 - **CRUD Operations:**
   - `GET /items` – List all items (requires JWT).
